@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-navy-950 text-slate-200 font-sans antialiased; }
+input, select, textarea { @apply bg-navy-900 border border-navy-700 rounded-md px-3 py-2 text-sm w-full text-slate-100 placeholder-slate-500; }
+input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible { @apply outline-none ring-2 ring-cyanx-400/60; }
+label { @apply text-sm text-slate-400 block mb-1; }
+th { @apply text-left font-medium text-slate-400 px-3 py-2 border-b border-navy-700; }
+td { @apply px-3 py-2 border-b border-navy-800 align-top; }
+@media print { aside, header { display: none !important; } body { background: white; color: black; } }
+
+tbody tr:hover td { background: rgba(19, 33, 63, 0.6); }
